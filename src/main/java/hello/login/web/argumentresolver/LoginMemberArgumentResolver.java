@@ -11,6 +11,7 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+//resolveArgument(): 컨트롤러 호출 직전에 호출 되어서 필요한 파라미터 정보를 생성해준다. ex- 세션에 있는 로그인 회원 정보인 member 객체를 찾아서 반환.
 @Slf4j
 public class LoginMemberArgumentResolver implements HandlerMethodArgumentResolver {
 
